@@ -1,4 +1,4 @@
-import classes from './Links.module.css'
+import classes from 'src/components/Links/Links.module.css'
 
 const ITEMS = [
   { href: "https://nextjs.org/docs", 
@@ -21,7 +21,7 @@ const ITEMS = [
 
 export function Links() {
   return (
-        <div className={classes.grid}>
+        <div className={classes.grid}>          
           {ITEMS.map(item => {
             return (
               <a key={item.href} href={item.href} className={classes.card}>
